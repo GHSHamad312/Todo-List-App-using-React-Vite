@@ -1,0 +1,61 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(23, 93, 255, 0.315);
+    padding: 0 3vw;
+    width: 80vw;
+    height: 90px;
+    border-bottom-left-radius:20px ;
+    border-bottom-right-radius:20px ;
+
+
+}
+.icon{
+    width: 40px;
+    height: 40px;
+    background-image: url('../assets/list-blue-black.svg');
+    background-position: center center;
+    background-size: 100%;
+
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.madeby,.done{
+    background-color: #ffffff00;
+    border: 3px solid rgb(0, 127, 170);
+    padding: 10px;
+    border-radius: 20px;
+    color: rgb(0, 127, 170);
+    transition: ease-in-out 300ms;
+    font-weight: 700;
+    cursor: pointer;
+}
+.done:hover{
+    background-color: rgb(0, 127, 170);
+    color: white;
+}
+.madeby{
+    background-color: #ffffff00;
+    border: 3px solid rgb(255, 108, 78);
+    padding: 10px;
+    border-radius: 20px;
+    color: rgb(255, 108, 78);
+}
+.madeby:hover{
+    background-color: rgb(255, 108, 78);
+    color: white;
+    
+}
+.rightside{
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: 800;
+font-size: 17px;
+gap: 15px;
+color: rgb(40, 40, 40);
+}

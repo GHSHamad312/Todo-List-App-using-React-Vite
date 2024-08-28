@@ -1,0 +1,47 @@
+.parent{
+    border-radius: 20px;
+    min-height: 500px;
+    width: 80vw;
+    margin-top: 30px;
+
+}
+#todo{
+    width: 40vw;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: rgba(89, 89, 89, 0.314);
+}
+.form{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.add{
+    background-color: #ffffff00;
+    overflow: hidden;
+    color: orange;
+    border: 3px solid orange;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 300ms;
+}
+.add:hover{
+    background-color:orange;
+    color: white;
+    
+}
+.lowerdisplay{
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
