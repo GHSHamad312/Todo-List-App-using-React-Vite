@@ -12,7 +12,6 @@ const Navbar = () => {
             
         </div>
         <div className="buttons">
-            <button className='madeby'>Made By</button>
             <button className='done'>Done Tasks</button>
             <div className="checkbox">
               <input type="checkbox" />

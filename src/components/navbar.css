@@ -1,7 +1,7 @@
 .navbar{
     display: flex;
     justify-content: space-between;
-    background-color: rgba(23, 93, 255, 0.315);
+    background-color: var(--navbg);
     padding: 0 3vw;
     width: 80vw;
     height: 90px;
@@ -26,29 +26,19 @@
 }
 .madeby,.done{
     background-color: #ffffff00;
-    border: 3px solid rgb(0, 127, 170);
     padding: 10px;
     border-radius: 20px;
-    color: rgb(0, 127, 170);
     transition: ease-in-out 300ms;
     font-weight: 700;
     cursor: pointer;
 }
+.done{
+    border: 3px solid var(--btn1);
+    color: var(--btn1);
+}
 .done:hover{
-    background-color: rgb(0, 127, 170);
+    background-color:var(--btn1);
     color: white;
-}
-.madeby{
-    background-color: #ffffff00;
-    border: 3px solid rgb(255, 108, 78);
-    padding: 10px;
-    border-radius: 20px;
-    color: rgb(255, 108, 78);
-}
-.madeby:hover{
-    background-color: rgb(255, 108, 78);
-    color: white;
-    
 }
 .rightside{
 display: flex;

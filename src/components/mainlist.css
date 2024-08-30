@@ -3,13 +3,18 @@
     min-height: 500px;
     width: 80vw;
     margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
 
 }
 #todo{
     width: 40vw;
     height: 40px;
     border: none;
-    border-radius: 30px;
+    border-radius: 10px;
     padding: 10px;
     background-color: rgba(89, 89, 89, 0.314);
 }
@@ -39,9 +44,10 @@
 }
 .lowerdisplay{
     min-height: 500px;
+    width: 1095px;
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    align-content: flex-start;
+    gap: 5px;
     flex-wrap: wrap;
-    margin-top: 30px;
+    margin-top: 20px;
 }

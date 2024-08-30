@@ -1,5 +1,9 @@
 :root{
     --mainbg:rgb(255, 255, 255);
+    --navbg:rgba(23, 93, 255, 0.315);
+    --btn1:rgb(22, 182, 236);
+    --card:rgba(255, 255, 0, 0.337);
+
 }
 
 *{
@@ -10,5 +14,5 @@
 }
 body{
  background-color: var(--mainbg);
-
+overflow-x: hidden;
 }
