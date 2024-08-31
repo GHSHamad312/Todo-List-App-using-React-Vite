@@ -22,10 +22,12 @@ const Mainlist = () => {
       </div>
       <div className="lowerdisplay">
         {value.todo.map((todo, index) => {
-          if (!todo.completed) {
+          if (!todo.completed && !value.done) {
             return <Todo key={index} value={{ todo, addref, index }} />
           }
-          return null;
+          else if(todo.completed && value.done){
+            return <Todo key={index} value={{ todo, addref, index }} />
+          }
         })}
 
       </div>

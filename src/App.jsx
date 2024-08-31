@@ -8,6 +8,7 @@ import { context } from './contexts/context';
 function App() {
   const [todo, settodo] = useState([]);
   const [number, setnumber] = useState(0);
+  const [done , setDone] = useState(false)
 
   useEffect(() => {
 
@@ -40,7 +41,7 @@ function App() {
 
   return (
     <div className="main">
-      <context.Provider value={{ todo, settodo, number, setnumber }}>
+      <context.Provider value={{ todo, settodo, number, setnumber  ,done ,setDone}}>
         <Navbar />
         <Mainlist />
       </context.Provider>

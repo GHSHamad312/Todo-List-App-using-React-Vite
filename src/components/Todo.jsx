@@ -10,8 +10,7 @@ const Todo = ({ value }) => {
     temp.settodo(temparr)
   }
   let handleedit = () => {
-    value.addref.current.value = value.todo.body
-    temp.todo[value.index].body = value.addref.current.value
+    
   }
   let handlecomplete = () => {
    let  updatedarr = temp.todo.map(element=>{
