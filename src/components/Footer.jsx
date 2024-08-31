@@ -10,8 +10,8 @@ const Footer = () => {
       <div className="footertitle">Todo app Made by Hamad Ali Shah</div>
       <div className="contact">
         <div className="icons">
-          <a href="#"><img src={githubIcon} alt="github icon" /></a>
-          <a href="#"><img src={linkedinIcon} alt="linkedin icon" /></a>
+          <a href="https://github.com/GHSHamad312"><img src={githubIcon} alt="github icon" /></a>
+          <a href="https://www.linkedin.com/in/ghshamad/"><img src={linkedinIcon} alt="linkedin icon" /></a>
           <a href="#"><img src={gmailIcon} alt="gmail icon" /></a>
         </div>
       </div>
