@@ -1,8 +1,8 @@
 import React from 'react'
 import './footer.css'
-import githubIcon from './assets/github-142-svgrepo-com.svg';
-import linkedinIcon from './assets/linkedin-svgrepo-com.svg';
-import gmailIcon from './assets/gmail-svgrepo-com.svg';
+import githubIcon from '../assets/github-142-svgrepo-com.svg';
+import linkedinIcon from '../assets/linkedin-svgrepo-com.svg';
+import gmailIcon from '../assets/gmail-svgrepo-com.svg';
 
 const Footer = () => {
     return (
