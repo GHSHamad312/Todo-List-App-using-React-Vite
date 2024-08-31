@@ -18,7 +18,10 @@ const Mainlist = () => {
   return (
     <div className="parent">
       <div className="form">
-        <input type="text" ref={addref} name="todo" id="todo" />
+        <input type="text" ref={addref} name="todo" id="todo" onKeyDown={(e) => {
+        if (e.key === "Enter")
+            handleadd;
+        }}/>
         <button className='add' onClick={handleadd}>Add Todo</button>
       </div>
       <div className="lowerdisplay">
