@@ -1,19 +1,20 @@
-import './mainlist.css'
-import Todo from './Todo'
-import React, { useContext, useRef } from 'react'
-import { context } from '../contexts/context'
+import './mainlist.css';
+import Todo from './Todo';
+import React, { useContext, useRef } from 'react';
+import { context } from '../contexts/context';
 
 const Mainlist = () => {
-  const value = useContext(context)
+  const { todo, settodo, number, setnumber, done } = useContext(context);
   const addref = useRef();
-  
-  let handleadd = () => {
+
+  const handleadd = () => {
     if (addref.current.value !== '') {
-      value.setnumber(value.number + 1)
-      value.settodo([...value.todo, { id: value.number, body: addref.current.value, completed: false }])
+      setnumber(number + 1);
+      settodo([...todo, { id: number, body: addref.current.value, completed: false }]);
+      addref.current.value = '';
     }
-    addref.current.value = ''
-  }
+  };
+
   return (
     <div className="parent">
       <div className="form">
@@ -21,18 +22,14 @@ const Mainlist = () => {
         <button className='add' onClick={handleadd}>Add Todo</button>
       </div>
       <div className="lowerdisplay">
-        {value.todo.map((todo, index) => {
-          if (!todo.completed && !value.done) {
-            return <Todo key={index} value={{ todo, addref, index }} />
-          }
-          else if(todo.completed && value.done){
-            return <Todo key={index} value={{ todo, addref, index }} />
-          }
-        })}
-
+        {todo.map((todoItem, index) => (
+          (!todoItem.completed && !done) || (todoItem.completed && done) ? (
+            <Todo key={index} value={{ todo: todoItem, index }} />
+          ) : null
+        ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Mainlist
+export default Mainlist;

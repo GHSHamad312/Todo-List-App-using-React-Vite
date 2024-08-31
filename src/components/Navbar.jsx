@@ -1,6 +1,6 @@
-import './navbar.css'
-import React, { useState, useContext } from 'react'
-import { context } from '../contexts/context'
+import './navbar.css';
+import React, { useState, useContext } from 'react';
+import { context } from '../contexts/context';
 
 const Navbar = () => {
   const { done, setDone } = useContext(context);
@@ -12,7 +12,7 @@ const Navbar = () => {
       setText(newDone ? "Show Active" : "Show Done");
       return newDone;
     });
-  }
+  };
 
   return (
     <div className="navbar">
@@ -27,7 +27,7 @@ const Navbar = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
